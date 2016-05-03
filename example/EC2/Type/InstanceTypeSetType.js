@@ -12,7 +12,7 @@ var TypeInstanceTypeSetType = function(json, parentObj) {
       wsdlDefinition: {
         name: "item",
         type: "tns:InstanceTypeSetItemType",
-        minOccurs: 1,
+        minOccurs: "1",
         maxOccurs: "unbounded"
       },
       mask: Modeler.GET | Modeler.SET | Modeler.ARRAY,

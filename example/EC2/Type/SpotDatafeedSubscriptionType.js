@@ -48,7 +48,7 @@ var TypeSpotDatafeedSubscriptionType = function(json, parentObj) {
       wsdlDefinition: {
         name: "fault",
         type: "tns:SpotInstanceStateFaultType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

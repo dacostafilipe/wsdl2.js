@@ -21,7 +21,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "imageLocation",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -58,7 +58,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "productCodes",
         type: "tns:ProductCodesSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -68,7 +68,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "architecture",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -78,7 +78,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "imageType",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -88,7 +88,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "kernelId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -98,7 +98,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "ramdiskId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -108,7 +108,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "platform",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -118,7 +118,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "stateReason",
         type: "tns:StateReasonType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -128,7 +128,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "imageOwnerAlias",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -138,7 +138,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "name",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -148,7 +148,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "description",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -158,7 +158,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "rootDeviceType",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -168,7 +168,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "rootDeviceName",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -178,7 +178,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "blockDeviceMapping",
         type: "tns:BlockDeviceMappingType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -188,7 +188,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "virtualizationType",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -198,7 +198,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "tagSet",
         type: "tns:ResourceTagSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -208,7 +208,7 @@ var TypeDescribeImagesResponseItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "hypervisor",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

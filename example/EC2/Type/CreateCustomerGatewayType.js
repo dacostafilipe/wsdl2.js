@@ -30,7 +30,7 @@ var TypeCreateCustomerGatewayType = function(json, parentObj) {
       wsdlDefinition: {
         name: "bgpAsn",
         type: "xs:int",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

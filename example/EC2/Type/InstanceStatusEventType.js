@@ -39,7 +39,7 @@ var TypeInstanceStatusEventType = function(json, parentObj) {
       wsdlDefinition: {
         name: "notAfter",
         type: "xs:dateTime",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

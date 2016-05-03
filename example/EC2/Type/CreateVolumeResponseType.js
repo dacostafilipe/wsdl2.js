@@ -84,7 +84,7 @@ var TypeCreateVolumeResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "iops",
         type: "xs:int",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

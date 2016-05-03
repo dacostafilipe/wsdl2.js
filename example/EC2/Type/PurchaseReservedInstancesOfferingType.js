@@ -30,7 +30,7 @@ var TypePurchaseReservedInstancesOfferingType = function(json, parentObj) {
       wsdlDefinition: {
         name: "limitPrice",
         type: "tns:ReservedInstanceLimitPriceType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

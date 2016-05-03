@@ -21,7 +21,7 @@ var TypeInstanceNetworkInterfaceSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "subnetId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -31,7 +31,7 @@ var TypeInstanceNetworkInterfaceSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "vpcId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -41,7 +41,7 @@ var TypeInstanceNetworkInterfaceSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "description",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -69,7 +69,7 @@ var TypeInstanceNetworkInterfaceSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "macAddress",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -79,7 +79,7 @@ var TypeInstanceNetworkInterfaceSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "privateIpAddress",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -89,7 +89,7 @@ var TypeInstanceNetworkInterfaceSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "privateDnsName",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -99,7 +99,7 @@ var TypeInstanceNetworkInterfaceSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "sourceDestCheck",
         type: "xs:boolean",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -109,7 +109,7 @@ var TypeInstanceNetworkInterfaceSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "groupSet",
         type: "tns:GroupSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -128,7 +128,7 @@ var TypeInstanceNetworkInterfaceSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "association",
         type: "tns:InstanceNetworkInterfaceAssociationType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -138,7 +138,7 @@ var TypeInstanceNetworkInterfaceSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "privateIpAddressesSet",
         type: "tns:InstancePrivateIpAddressesSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

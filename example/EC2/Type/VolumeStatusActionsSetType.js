@@ -12,7 +12,7 @@ var TypeVolumeStatusActionsSetType = function(json, parentObj) {
       wsdlDefinition: {
         name: "item",
         type: "tns:VolumeStatusActionItemType",
-        minOccurs: 0,
+        minOccurs: "0",
         maxOccurs: "unbounded"
       },
       mask: Modeler.GET | Modeler.SET | Modeler.ARRAY,

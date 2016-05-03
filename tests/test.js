@@ -2,7 +2,7 @@ var spawn = require('child_process').spawn;
 var fs = require('fs');
 var assert = require('assert');
 var rimraf = require('rimraf');
-var request = require('request');
+var request = require('superagent');
 var sinon = require('sinon');
 
 var Service = null;

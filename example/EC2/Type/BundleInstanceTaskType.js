@@ -66,7 +66,7 @@ var TypeBundleInstanceTaskType = function(json, parentObj) {
       wsdlDefinition: {
         name: "progress",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -76,7 +76,7 @@ var TypeBundleInstanceTaskType = function(json, parentObj) {
       wsdlDefinition: {
         name: "error",
         type: "tns:BundleInstanceTaskErrorType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

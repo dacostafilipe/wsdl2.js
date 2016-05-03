@@ -1,11 +1,11 @@
 {
-  "author": "Oliver Rumbelow <oliver.rumbelow@holidayextras.com> (http://www.holidayextras.co.uk/)",
-  "name": "wsdl2.js",
-  "description": "Consumes a WSDL file and produces a high quality, manageable Javascript library",
-  "version": "0.4.0",
+  "author": "Filipe DA COSTA",
+  "name": "wsdl2browser",
+  "description": "Browser version of wsdl2",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/holidayextras/wsdl2.js.git"
+    "url": "https://github.com/dacostafilipe/wsdl2.js.git"
   },
   "scripts": {
     "test": "node tests/test && echo ✔"
@@ -18,8 +18,8 @@
   ],
   "dependencies": {
     "minimist": "^1.1.0",
-    "request": ">=2.16.6",
-    "xml2json": ">=0.3.2"
+    "superagent": "^1.8.3",
+    "xml2js": "^0.4.16"
   },
   "engines": {
     "node": "*"

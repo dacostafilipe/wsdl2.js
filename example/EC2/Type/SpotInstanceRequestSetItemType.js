@@ -48,7 +48,7 @@ var TypeSpotInstanceRequestSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "fault",
         type: "tns:SpotInstanceStateFaultType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -58,7 +58,7 @@ var TypeSpotInstanceRequestSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "status",
         type: "tns:SpotInstanceStatusMessageType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -68,7 +68,7 @@ var TypeSpotInstanceRequestSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "validFrom",
         type: "xs:dateTime",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -78,7 +78,7 @@ var TypeSpotInstanceRequestSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "validUntil",
         type: "xs:dateTime",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -88,7 +88,7 @@ var TypeSpotInstanceRequestSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "launchGroup",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -98,7 +98,7 @@ var TypeSpotInstanceRequestSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "availabilityZoneGroup",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -108,7 +108,7 @@ var TypeSpotInstanceRequestSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "launchSpecification",
         type: "tns:LaunchSpecificationResponseType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -118,7 +118,7 @@ var TypeSpotInstanceRequestSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "instanceId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -128,7 +128,7 @@ var TypeSpotInstanceRequestSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "createTime",
         type: "xs:dateTime",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -138,7 +138,7 @@ var TypeSpotInstanceRequestSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "productDescription",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -148,7 +148,7 @@ var TypeSpotInstanceRequestSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "tagSet",
         type: "tns:ResourceTagSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -158,7 +158,7 @@ var TypeSpotInstanceRequestSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "launchedAvailabilityZone",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

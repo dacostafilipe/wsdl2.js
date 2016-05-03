@@ -16,22 +16,27 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with wsdl2.js.  If not, see <http://www.gnu.org/licenses/>.
 *******************************************************************/
-var fs = require('fs');
-var parser = require('xml2json');
-var request = require('request');
+var parser = require('xmljson');
+var request = require('superagent');
 var models = { };
 var serviceDefinition = { };
 var Modeler = require('./Modeler.js');
+var RequireList = require('./RequireList.js');
 
 var coreSettings = {
   debugSoap: false,
   benchmark: true,
   createMock: false,
   useMock: false,
-  modeler: Modeler.Settings
+  modeler: Modeler.Settings,
+  logger: function(data) {
+    console.log(JSON.stringify(data, null, 2));
+  }
 };
 
 function jsonToXml(data, name) {
+  var keepEmptyTags = false;
+
   name = name || "root";
   if (data == undefined) return "";
   if (data instanceof Array) {
@@ -47,7 +52,7 @@ function jsonToXml(data, name) {
     var result = "";
     for (var i=0; i<keys.length; i++) {
       var childTxt = jsonToXml(data[keys[i]], keys[i]);
-      if (childTxt != "") {
+      if (childTxt != "" || keepEmptyTags) {
         if (!(data[keys[i]] instanceof Array)) {
           result += "<"+keys[i]+">"+childTxt+"</"+keys[i]+">";
         } else {
@@ -62,44 +67,62 @@ function jsonToXml(data, name) {
 };
 
 function saveMock(method, response) {
-  fs.writeFile(__dirname+'/Mocks/'+method+".js", response, function (err) { });
+  //fs.writeFile(__dirname+'/Mocks/'+method+".js", response, function (err) { });
 };
 
 function loadMock(method, callback) {
-  fs.readFile(__dirname+'/Mocks/'+method+".js", callback);
+  //fs.readFile(__dirname+'/Mocks/'+method+".js", callback);
 };
 
-function handleSoapResponse(method, outputModel, startTime, err, body, callback) {
-  if (coreSettings.benchmark) console.log("SOAP", method, "took:", (new Date())-startTime);
-  if (coreSettings.debugSoap) console.log("Error:", err);
-  if (coreSettings.debugSoap) console.log("Response:", body);
+function handleSoapResponse(method, outputModel, err, body, callback, debug) {
+  debug.endTime = new Date();
+  debug.took = (debug.endTime)-(debug.startTime);
+  debug.response = {
+    error: err,
+    response: body
+  };
+  if (coreSettings.benchmark) coreSettings.logger({ method: method, took: debug.took });
+
   if (err) {
+    if (coreSettings.debugSoap) coreSettings.logger(debug);
     return callback(err, null);
   }
   if (coreSettings.createMock) saveMock(method, body);
-  var json = {};
-  try {
-    json = JSON.parse(parser.toJson(body));
-    if (coreSettings.debugSoap) console.log("JSON Response:", JSON.stringify(json, null, 2));
+
+
+  parser.to_json(body,function(err,data){
+
+    if(err){
+      return callback(err, null);
+    }
+
+    var json = data;
+
     json = json['soap:Envelope']['soap:Body'][method+"Response"];
     if (json == undefined) return callback("Invalid response to "+method);
-    obj = new models[outputModel](json);
-    if (coreSettings.debugSoap) console.log("Output:", JSON.stringify(json, null, 2));
-    
+
+    var obj = new models[outputModel](json);
+
+    debug.response.output = json;
+    if (coreSettings.debugSoap) coreSettings.logger(debug);
+
     obj.debug = function() {
-      console.log("----", method+" Response", "----");
-      console.log("XML: ", body);
-      console.log("JSON:", JSON.stringify(json, null, 2));
-      console.log("Modeled:", JSON.stringify(obj, null, 2));
-      console.log("Validates:", obj.validate());
-      console.log("------------------------");
+      coreSettings.logger({
+        method: method,
+        type: 'Response',
+        xml: body,
+        json: json,
+        modeled: obj,
+        validates: obj.validate()
+      });
     };
     Object.defineProperty(obj, "debug", { enumerable: false });
     Object.preventExtensions(this);
-  } catch (err) {
-    return callback(err, null);
-  }
-  return callback(null, obj);
+
+    return callback(null, obj);
+
+  });
+
 };
 
 function doSoapRequest(url, method, soapAction, data, inputModel, outputModel, ns, callback) {
@@ -108,8 +131,7 @@ function doSoapRequest(url, method, soapAction, data, inputModel, outputModel, n
     'Content-Type': 'application/soap+xml; charset=utf-8',
     'SOAPAction': '"'+soapAction+'"'
   };
-  
-  var startTime;
+
   var soapBody = '<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">' +
                    '<soap:Body>' +
                      '<'+method+' xmlns="'+ns+'">'+
@@ -119,23 +141,26 @@ function doSoapRequest(url, method, soapAction, data, inputModel, outputModel, n
                  '</soap:Envelope>';
 
   var soapRequest = {
-    url: url, 
+    url: url,
     headers: headers,
     body: soapBody,
-    timeout: 15000
+    timeout: coreSettings.timeout || 15000
   };
-  
-  if (coreSettings.debugSoap) console.log("\n####", method, "Request ####");
-  if (coreSettings.debugSoap) console.log("Input:", JSON.stringify(data, null, 2));
-  if (coreSettings.debugSoap) console.log("Request:", JSON.stringify(soapRequest, null, 2));
-  if (coreSettings.benchmark) startTime = new Date();
+  var debug = {
+    startTime: new Date(),
+    request: {
+      method: method,
+      input: data,
+      request: soapRequest
+    }
+  };
   if (!coreSettings.useMock) {
     request.post(soapRequest, function (err, response, body) {
-      handleSoapResponse(method, outputModel, startTime, err, body, callback)
+      handleSoapResponse(method, outputModel, err, body, callback, debug);
     });
   } else {
     loadMock(method, function(err, body) {
-      handleSoapResponse(method, outputModel, startTime, err, body, callback)
+      handleSoapResponse(method, outputModel, err, body, callback, debug);
     });
   }
 };
@@ -146,28 +171,27 @@ function SoapService() {
   self.Types = { };
   self.Elements = { };
   self.Settings = coreSettings;
-  
+
   // load all the service models
-  var includeList = fs.readdirSync(__dirname+"/Element");
-  includeList.forEach(function(fileName) {
+  RequireList.Element.forEach(function(fileName) {
     if (/\.js$/.test(fileName)) {
       fileName = fileName.substring(0, fileName.length-3);
       models["Element"+fileName] = require('./Element/' + fileName);
       self.Elements[fileName] = require('./Element/' + fileName);
     }
   });
-  var includeList = fs.readdirSync(__dirname+"/Type");
-  includeList.forEach(function(fileName) {
+
+  RequireList.Type.forEach(function(fileName) {
     if (/\.js$/.test(fileName)) {
       fileName = fileName.substring(0, fileName.length-3);
       models["Type"+fileName] = require('./Type/' + fileName);
       self.Types[fileName] = require('./Type/' + fileName);
     }
   });
-  
+
   // load the service definitions
   serviceDefinition = require("./ServiceDefinition.js");
-  
+
   //create the wrappers
   for (var someServiceName in serviceDefinition) {
     var tmpObj = { };
@@ -182,7 +206,7 @@ function SoapService() {
           parent[properties.input.replace("Element", "")] = function(json) {
             var newObject = new models[properties.input](json, this);
             this.request = function(callback) {
-              doSoapRequest(url, functionName, properties.soapAction, this, 
+              doSoapRequest(url, functionName, properties.soapAction, this,
                           properties.input, properties.output, namespace, callback);
             };
             Object.defineProperty(this, "request", { enumerable: false });
@@ -191,11 +215,13 @@ function SoapService() {
             };
             Object.defineProperty(this, "preview", { enumerable: false });
             this.debug = function() {
-              console.log("----", functionName+" Request", "----");
-              console.log("JSON:", JSON.stringify(this, null, 2));
-              console.log("XML: ", this.preview());
-              console.log("Validates:", this.validate());
-              console.log("------------------------");
+              coreSettings.logger({
+                method: functionName,
+                type: 'Request',
+                json: this,
+                xml: this.preview(),
+                validates: this.validate()
+              });
             };
             Object.defineProperty(this, "debug", { enumerable: false });
             Object.preventExtensions(this);
@@ -204,7 +230,7 @@ function SoapService() {
       }
     })(someServiceName, serviceDefinition[someServiceName], tmpObj);
   }
-  
+
 };
 
 module.exports = new SoapService();

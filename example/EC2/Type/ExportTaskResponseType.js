@@ -13,7 +13,7 @@ var TypeExportTaskResponseType = function(json, parentObj) {
         "xs:element": {
           name: "exportToS3",
           type: "tns:ExportToS3TaskResponseType",
-          minOccurs: 0
+          minOccurs: "0"
         },
         type: "xs:string"
       },

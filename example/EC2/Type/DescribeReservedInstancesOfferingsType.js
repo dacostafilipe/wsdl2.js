@@ -12,7 +12,7 @@ var TypeDescribeReservedInstancesOfferingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "reservedInstancesOfferingsSet",
         type: "tns:DescribeReservedInstancesOfferingsSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -22,7 +22,7 @@ var TypeDescribeReservedInstancesOfferingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "instanceType",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -32,7 +32,7 @@ var TypeDescribeReservedInstancesOfferingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "availabilityZone",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -42,7 +42,7 @@ var TypeDescribeReservedInstancesOfferingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "productDescription",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -52,7 +52,7 @@ var TypeDescribeReservedInstancesOfferingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "filterSet",
         type: "tns:FilterSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -62,7 +62,7 @@ var TypeDescribeReservedInstancesOfferingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "instanceTenancy",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -72,7 +72,7 @@ var TypeDescribeReservedInstancesOfferingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "offeringType",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -82,7 +82,7 @@ var TypeDescribeReservedInstancesOfferingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "includeMarketplace",
         type: "xs:boolean",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -92,7 +92,7 @@ var TypeDescribeReservedInstancesOfferingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "minDuration",
         type: "xs:long",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -102,7 +102,7 @@ var TypeDescribeReservedInstancesOfferingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "maxDuration",
         type: "xs:long",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -112,7 +112,7 @@ var TypeDescribeReservedInstancesOfferingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "maxInstanceCount",
         type: "xs:int",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -122,7 +122,7 @@ var TypeDescribeReservedInstancesOfferingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "nextToken",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -132,7 +132,7 @@ var TypeDescribeReservedInstancesOfferingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "maxResults",
         type: "xs:int",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

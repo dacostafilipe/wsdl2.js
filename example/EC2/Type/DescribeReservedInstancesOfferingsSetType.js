@@ -12,7 +12,7 @@ var TypeDescribeReservedInstancesOfferingsSetType = function(json, parentObj) {
       wsdlDefinition: {
         name: "item",
         type: "tns:DescribeReservedInstancesOfferingsSetItemType",
-        minOccurs: 0,
+        minOccurs: "0",
         maxOccurs: "unbounded"
       },
       mask: Modeler.GET | Modeler.SET | Modeler.ARRAY,

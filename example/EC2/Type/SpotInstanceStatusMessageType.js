@@ -12,7 +12,7 @@ var TypeSpotInstanceStatusMessageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "code",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -22,7 +22,7 @@ var TypeSpotInstanceStatusMessageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "updateTime",
         type: "xs:dateTime",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -32,7 +32,7 @@ var TypeSpotInstanceStatusMessageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "message",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

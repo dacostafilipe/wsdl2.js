@@ -12,7 +12,7 @@ var TypeVpnConnectionOptionsRequestType = function(json, parentObj) {
       wsdlDefinition: {
         name: "staticRoutesOnly",
         type: "xs:boolean",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

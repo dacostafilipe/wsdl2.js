@@ -21,7 +21,7 @@ var TypeCreateReservedInstancesListingType = function(json, parentObj) {
       wsdlDefinition: {
         name: "instanceCount",
         type: "xs:int",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

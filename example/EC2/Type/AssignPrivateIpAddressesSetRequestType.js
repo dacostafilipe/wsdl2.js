@@ -12,7 +12,7 @@ var TypeAssignPrivateIpAddressesSetRequestType = function(json, parentObj) {
       wsdlDefinition: {
         name: "item",
         type: "tns:AssignPrivateIpAddressesSetItemRequestType",
-        minOccurs: 1,
+        minOccurs: "1",
         maxOccurs: "unbounded"
       },
       mask: Modeler.GET | Modeler.SET | Modeler.ARRAY,

@@ -21,7 +21,7 @@ var TypeSubnetType = function(json, parentObj) {
       wsdlDefinition: {
         name: "state",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -31,7 +31,7 @@ var TypeSubnetType = function(json, parentObj) {
       wsdlDefinition: {
         name: "vpcId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -41,7 +41,7 @@ var TypeSubnetType = function(json, parentObj) {
       wsdlDefinition: {
         name: "cidrBlock",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -51,7 +51,7 @@ var TypeSubnetType = function(json, parentObj) {
       wsdlDefinition: {
         name: "availableIpAddressCount",
         type: "xs:int",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -61,7 +61,7 @@ var TypeSubnetType = function(json, parentObj) {
       wsdlDefinition: {
         name: "availabilityZone",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -71,7 +71,7 @@ var TypeSubnetType = function(json, parentObj) {
       wsdlDefinition: {
         name: "defaultForAz",
         type: "xs:boolean",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -81,7 +81,7 @@ var TypeSubnetType = function(json, parentObj) {
       wsdlDefinition: {
         name: "mapPublicIpOnLaunch",
         type: "xs:boolean",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -91,7 +91,7 @@ var TypeSubnetType = function(json, parentObj) {
       wsdlDefinition: {
         name: "tagSet",
         type: "tns:ResourceTagSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

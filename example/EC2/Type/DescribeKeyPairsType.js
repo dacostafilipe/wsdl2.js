@@ -21,7 +21,7 @@ var TypeDescribeKeyPairsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "filterSet",
         type: "tns:FilterSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

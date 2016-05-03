@@ -12,7 +12,7 @@ var TypeIamInstanceProfileRequestType = function(json, parentObj) {
       wsdlDefinition: {
         name: "arn",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -22,7 +22,7 @@ var TypeIamInstanceProfileRequestType = function(json, parentObj) {
       wsdlDefinition: {
         name: "name",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

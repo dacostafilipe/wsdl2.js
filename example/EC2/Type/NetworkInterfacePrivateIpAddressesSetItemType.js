@@ -21,7 +21,7 @@ var TypeNetworkInterfacePrivateIpAddressesSetItemType = function(json, parentObj
       wsdlDefinition: {
         name: "privateDnsName",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -40,7 +40,7 @@ var TypeNetworkInterfacePrivateIpAddressesSetItemType = function(json, parentObj
       wsdlDefinition: {
         name: "association",
         type: "tns:NetworkInterfaceAssociationType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

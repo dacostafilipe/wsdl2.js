@@ -75,7 +75,7 @@ var TypeDescribeVolumesSetItemResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "tagSet",
         type: "tns:ResourceTagSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -94,7 +94,7 @@ var TypeDescribeVolumesSetItemResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "iops",
         type: "xs:int",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

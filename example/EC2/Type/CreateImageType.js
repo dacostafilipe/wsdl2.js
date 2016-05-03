@@ -30,7 +30,7 @@ var TypeCreateImageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "description",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -40,7 +40,7 @@ var TypeCreateImageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "noReboot",
         type: "xs:boolean",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -50,7 +50,7 @@ var TypeCreateImageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "blockDeviceMapping",
         type: "tns:BlockDeviceMappingType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

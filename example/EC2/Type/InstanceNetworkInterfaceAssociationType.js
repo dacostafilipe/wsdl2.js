@@ -21,7 +21,7 @@ var TypeInstanceNetworkInterfaceAssociationType = function(json, parentObj) {
       wsdlDefinition: {
         name: "publicDnsName",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -31,7 +31,7 @@ var TypeInstanceNetworkInterfaceAssociationType = function(json, parentObj) {
       wsdlDefinition: {
         name: "ipOwnerId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

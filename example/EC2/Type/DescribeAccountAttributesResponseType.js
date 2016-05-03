@@ -21,7 +21,7 @@ var TypeDescribeAccountAttributesResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "accountAttributeSet",
         type: "tns:AccountAttributeSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

@@ -30,7 +30,7 @@ var TypeBundleInstanceS3StorageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "awsAccessKeyId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -40,7 +40,7 @@ var TypeBundleInstanceS3StorageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "uploadPolicy",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -50,7 +50,7 @@ var TypeBundleInstanceS3StorageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "uploadPolicySignature",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

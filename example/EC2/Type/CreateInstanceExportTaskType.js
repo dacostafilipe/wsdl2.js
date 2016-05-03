@@ -12,7 +12,7 @@ var TypeCreateInstanceExportTaskType = function(json, parentObj) {
       wsdlDefinition: {
         name: "exportToS3",
         type: "tns:ExportToS3TaskType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

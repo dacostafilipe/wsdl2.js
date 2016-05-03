@@ -57,7 +57,7 @@ var TypeNetworkAclEntryType = function(json, parentObj) {
       wsdlDefinition: {
         name: "icmpTypeCode",
         type: "tns:IcmpTypeCodeType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -67,7 +67,7 @@ var TypeNetworkAclEntryType = function(json, parentObj) {
       wsdlDefinition: {
         name: "portRange",
         type: "tns:PortRangeType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

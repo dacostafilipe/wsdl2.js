@@ -21,7 +21,7 @@ var TypeCreateNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "description",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -31,7 +31,7 @@ var TypeCreateNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "privateIpAddress",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -41,7 +41,7 @@ var TypeCreateNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "groupSet",
         type: "tns:SecurityGroupIdSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -51,7 +51,7 @@ var TypeCreateNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "privateIpAddressesSet",
         type: "tns:PrivateIpAddressesSetRequestType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -61,7 +61,7 @@ var TypeCreateNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "secondaryPrivateIpAddressCount",
         type: "xs:int",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

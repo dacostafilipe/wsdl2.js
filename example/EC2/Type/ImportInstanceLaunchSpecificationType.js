@@ -21,7 +21,7 @@ var TypeImportInstanceLaunchSpecificationType = function(json, parentObj) {
       wsdlDefinition: {
         name: "groupSet",
         type: "tns:ImportInstanceGroupSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -31,7 +31,7 @@ var TypeImportInstanceLaunchSpecificationType = function(json, parentObj) {
       wsdlDefinition: {
         name: "userData",
         type: "tns:UserDataType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -50,7 +50,7 @@ var TypeImportInstanceLaunchSpecificationType = function(json, parentObj) {
       wsdlDefinition: {
         name: "placement",
         type: "tns:InstancePlacementType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -60,7 +60,7 @@ var TypeImportInstanceLaunchSpecificationType = function(json, parentObj) {
       wsdlDefinition: {
         name: "monitoring",
         type: "tns:MonitoringInstanceType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -70,7 +70,7 @@ var TypeImportInstanceLaunchSpecificationType = function(json, parentObj) {
       wsdlDefinition: {
         name: "subnetId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -80,7 +80,7 @@ var TypeImportInstanceLaunchSpecificationType = function(json, parentObj) {
       wsdlDefinition: {
         name: "instanceInitiatedShutdownBehavior",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -90,7 +90,7 @@ var TypeImportInstanceLaunchSpecificationType = function(json, parentObj) {
       wsdlDefinition: {
         name: "privateIpAddress",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

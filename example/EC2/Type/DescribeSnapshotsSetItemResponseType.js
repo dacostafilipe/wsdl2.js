@@ -75,7 +75,7 @@ var TypeDescribeSnapshotsSetItemResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "description",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -85,7 +85,7 @@ var TypeDescribeSnapshotsSetItemResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "ownerAlias",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -95,7 +95,7 @@ var TypeDescribeSnapshotsSetItemResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "tagSet",
         type: "tns:ResourceTagSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

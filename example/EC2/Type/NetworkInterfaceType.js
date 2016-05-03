@@ -21,7 +21,7 @@ var TypeNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "subnetId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -31,7 +31,7 @@ var TypeNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "vpcId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -41,7 +41,7 @@ var TypeNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "availabilityZone",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -51,7 +51,7 @@ var TypeNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "description",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -70,7 +70,7 @@ var TypeNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "requesterId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -80,7 +80,7 @@ var TypeNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "requesterManaged",
         type: "xs:boolean",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -117,7 +117,7 @@ var TypeNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "privateDnsName",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -145,7 +145,7 @@ var TypeNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "attachment",
         type: "tns:NetworkInterfaceAttachmentType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -155,7 +155,7 @@ var TypeNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "association",
         type: "tns:NetworkInterfaceAssociationType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -165,7 +165,7 @@ var TypeNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "tagSet",
         type: "tns:ResourceTagSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -175,7 +175,7 @@ var TypeNetworkInterfaceType = function(json, parentObj) {
       wsdlDefinition: {
         name: "privateIpAddressesSet",
         type: "tns:NetworkInterfacePrivateIpAddressesSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

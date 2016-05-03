@@ -12,7 +12,7 @@ var TypeCreateVolumeType = function(json, parentObj) {
       wsdlDefinition: {
         name: "size",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -22,7 +22,7 @@ var TypeCreateVolumeType = function(json, parentObj) {
       wsdlDefinition: {
         name: "snapshotId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -41,7 +41,7 @@ var TypeCreateVolumeType = function(json, parentObj) {
       wsdlDefinition: {
         name: "volumeType",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -51,7 +51,7 @@ var TypeCreateVolumeType = function(json, parentObj) {
       wsdlDefinition: {
         name: "iops",
         type: "xs:int",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

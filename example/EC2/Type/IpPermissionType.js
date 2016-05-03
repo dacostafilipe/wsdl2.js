@@ -21,7 +21,7 @@ var TypeIpPermissionType = function(json, parentObj) {
       wsdlDefinition: {
         name: "fromPort",
         type: "xs:int",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -31,7 +31,7 @@ var TypeIpPermissionType = function(json, parentObj) {
       wsdlDefinition: {
         name: "toPort",
         type: "xs:int",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

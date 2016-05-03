@@ -21,7 +21,7 @@ var TypeDescribeVolumeStatusType = function(json, parentObj) {
       wsdlDefinition: {
         name: "filterSet",
         type: "tns:FilterSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -31,7 +31,7 @@ var TypeDescribeVolumeStatusType = function(json, parentObj) {
       wsdlDefinition: {
         name: "maxResults",
         type: "xs:integer",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -41,7 +41,7 @@ var TypeDescribeVolumeStatusType = function(json, parentObj) {
       wsdlDefinition: {
         name: "nextToken",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

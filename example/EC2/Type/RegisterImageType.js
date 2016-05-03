@@ -12,7 +12,7 @@ var TypeRegisterImageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "imageLocation",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -31,7 +31,7 @@ var TypeRegisterImageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "description",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -41,7 +41,7 @@ var TypeRegisterImageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "architecture",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -51,7 +51,7 @@ var TypeRegisterImageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "kernelId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -61,7 +61,7 @@ var TypeRegisterImageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "ramdiskId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -71,7 +71,7 @@ var TypeRegisterImageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "rootDeviceName",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -81,7 +81,7 @@ var TypeRegisterImageType = function(json, parentObj) {
       wsdlDefinition: {
         name: "blockDeviceMapping",
         type: "tns:BlockDeviceMappingType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

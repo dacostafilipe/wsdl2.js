@@ -21,7 +21,7 @@ var TypeDetachVolumeType = function(json, parentObj) {
       wsdlDefinition: {
         name: "instanceId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -31,7 +31,7 @@ var TypeDetachVolumeType = function(json, parentObj) {
       wsdlDefinition: {
         name: "device",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -41,7 +41,7 @@ var TypeDetachVolumeType = function(json, parentObj) {
       wsdlDefinition: {
         name: "force",
         type: "xs:boolean",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

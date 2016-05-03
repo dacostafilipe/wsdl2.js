@@ -21,7 +21,7 @@ var TypeVpcType = function(json, parentObj) {
       wsdlDefinition: {
         name: "state",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -31,7 +31,7 @@ var TypeVpcType = function(json, parentObj) {
       wsdlDefinition: {
         name: "cidrBlock",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -41,7 +41,7 @@ var TypeVpcType = function(json, parentObj) {
       wsdlDefinition: {
         name: "dhcpOptionsId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -51,7 +51,7 @@ var TypeVpcType = function(json, parentObj) {
       wsdlDefinition: {
         name: "tagSet",
         type: "tns:ResourceTagSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -61,7 +61,7 @@ var TypeVpcType = function(json, parentObj) {
       wsdlDefinition: {
         name: "instanceTenancy",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -71,7 +71,7 @@ var TypeVpcType = function(json, parentObj) {
       wsdlDefinition: {
         name: "isDefault",
         type: "xs:boolean",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

@@ -102,7 +102,7 @@ var TypeDescribeReservedInstancesResponseSetItemType = function(json, parentObj)
       wsdlDefinition: {
         name: "tagSet",
         type: "tns:ResourceTagSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -139,7 +139,7 @@ var TypeDescribeReservedInstancesResponseSetItemType = function(json, parentObj)
       wsdlDefinition: {
         name: "recurringCharges",
         type: "tns:RecurringChargesSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

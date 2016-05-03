@@ -12,7 +12,7 @@ var TypeDescribeReservedInstancesListingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "reservedInstancesListingSet",
         type: "tns:DescribeReservedInstancesListingSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -22,7 +22,7 @@ var TypeDescribeReservedInstancesListingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "reservedInstancesSet",
         type: "tns:DescribeReservedInstancesSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -32,7 +32,7 @@ var TypeDescribeReservedInstancesListingsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "filterSet",
         type: "tns:FilterSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

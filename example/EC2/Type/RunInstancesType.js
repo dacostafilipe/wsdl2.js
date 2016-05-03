@@ -39,7 +39,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "keyName",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -58,7 +58,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "additionalInfo",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -68,7 +68,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "userData",
         type: "tns:UserDataType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -78,7 +78,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "addressingType",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -97,7 +97,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "placement",
         type: "tns:PlacementRequestType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -107,7 +107,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "kernelId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -117,7 +117,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "ramdiskId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -127,7 +127,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "blockDeviceMapping",
         type: "tns:BlockDeviceMappingType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -137,7 +137,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "monitoring",
         type: "tns:MonitoringInstanceType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -147,7 +147,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "subnetId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -157,7 +157,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "disableApiTermination",
         type: "xs:boolean",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -167,7 +167,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "instanceInitiatedShutdownBehavior",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -177,7 +177,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "license",
         type: "tns:InstanceLicenseRequestType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -187,7 +187,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "privateIpAddress",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -197,7 +197,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "clientToken",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -207,7 +207,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "networkInterfaceSet",
         type: "tns:InstanceNetworkInterfaceSetRequestType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -217,7 +217,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "iamInstanceProfile",
         type: "tns:IamInstanceProfileRequestType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -227,7 +227,7 @@ var TypeRunInstancesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "ebsOptimized",
         type: "xs:boolean",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

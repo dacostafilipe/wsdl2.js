@@ -18,7 +18,7 @@ You should have received a copy of the GNU General Public License
 along with wsdl2.js.  If not, see <http://www.gnu.org/licenses/>.
 *******************************************************************/
 var Modeler = require("./lib/Modeler.js");
-var parser = require('xml2json');
+var parseString = require('xml2js').parseString;
 var fs = require('fs');
 var minimist = require('minimist');
 
@@ -33,6 +33,7 @@ var xmlCache = {
   complexTypes: { },
   simpleTypes: { }
 };
+var requiredItems = {};
 var contentTypeHeaders = {
   '1.1': 'text/xml; charset=utf-8',
   '1.2': 'application/soap+xml; charset=utf-8'
@@ -75,8 +76,11 @@ try {
 } catch(e) { }
 
 var classTemplate = fs.readFileSync(__dirname+'/lib/classTemplate.js');
-var json = JSON.parse(parser.toJson(xmlWsdlDefinition));
-processWSDL(json);
+var requireListTemplate = fs.readFileSync(__dirname+'/lib/RequireList.js');
+
+parseString(xmlWsdlDefinition,{trim: true,mergeAttrs:true,explicitArray:false},function(err,data){
+  processWSDL(data);
+});
 
 function stripNamespace(t) {
   if (t.match(":")) {
@@ -92,6 +96,8 @@ function processWSDL(json) {
   processPortTypes(json);
   processBindings(json);
   processTypes(json);
+
+  createRequireList();
 
   var serviceDefinition = "module.exports = "+JSON.stringify(services,null,2);
   fs.writeFile(process.cwd()+"/"+serviceName+'/ServiceDefinition.js', serviceDefinition);
@@ -447,9 +453,27 @@ function createClass(className, type, propertyDefinition) {
   try {
     fs.unlinkSync(serviceName+'/'+className+".js", 10000);
   } catch(e) { }
+
+
+  if(!requiredItems[type]){
+    requiredItems[type] = [];
+  }
+
+  requiredItems[type].push(className+'.js');
+
   fs.writeFile(process.cwd()+'/'+serviceName+'/'+type+"/"+className+".js", newClass, function (err) { });
+
 };
 
+
+
+function createRequireList(){
+
+  var newRequireList = String(requireListTemplate).replace(/###1###/g, JSON.stringify(requiredItems));
+
+  fs.writeFile(process.cwd()+"/"+serviceName+"/RequireList.js",newRequireList);
+
+}
 
 
 

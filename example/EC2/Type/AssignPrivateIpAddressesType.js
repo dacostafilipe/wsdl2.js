@@ -21,7 +21,7 @@ var TypeAssignPrivateIpAddressesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "privateIpAddressesSet",
         type: "tns:AssignPrivateIpAddressesSetRequestType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -31,7 +31,7 @@ var TypeAssignPrivateIpAddressesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "secondaryPrivateIpAddressCount",
         type: "xs:int",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -41,7 +41,7 @@ var TypeAssignPrivateIpAddressesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "allowReassignment",
         type: "xs:boolean",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

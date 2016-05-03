@@ -12,7 +12,7 @@ var TypeConversionTaskType = function(json, parentObj) {
       wsdlDefinition: {
         name: "importVolume",
         type: "tns:ImportVolumeTaskDetailsType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -22,7 +22,7 @@ var TypeConversionTaskType = function(json, parentObj) {
       wsdlDefinition: {
         name: "importInstance",
         type: "tns:ImportInstanceTaskDetailsType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

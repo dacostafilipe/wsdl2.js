@@ -84,7 +84,7 @@ var TypeDescribeReservedInstancesListingsResponseSetItemType = function(json, pa
       wsdlDefinition: {
         name: "tagSet",
         type: "tns:ResourceTagSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -94,7 +94,7 @@ var TypeDescribeReservedInstancesListingsResponseSetItemType = function(json, pa
       wsdlDefinition: {
         name: "clientToken",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

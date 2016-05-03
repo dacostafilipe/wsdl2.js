@@ -21,7 +21,7 @@ var TypeNetworkInterfaceAssociationType = function(json, parentObj) {
       wsdlDefinition: {
         name: "publicDnsName",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -31,7 +31,7 @@ var TypeNetworkInterfaceAssociationType = function(json, parentObj) {
       wsdlDefinition: {
         name: "ipOwnerId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -41,7 +41,7 @@ var TypeNetworkInterfaceAssociationType = function(json, parentObj) {
       wsdlDefinition: {
         name: "allocationId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -51,7 +51,7 @@ var TypeNetworkInterfaceAssociationType = function(json, parentObj) {
       wsdlDefinition: {
         name: "associationId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

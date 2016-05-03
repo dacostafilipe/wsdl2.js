@@ -12,7 +12,7 @@ var TypeDescribeSubnetsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "subnetSet",
         type: "tns:SubnetIdSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -22,7 +22,7 @@ var TypeDescribeSubnetsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "filterSet",
         type: "tns:FilterSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

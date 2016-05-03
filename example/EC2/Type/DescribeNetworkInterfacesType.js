@@ -12,7 +12,7 @@ var TypeDescribeNetworkInterfacesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "networkInterfaceIdSet",
         type: "tns:NetworkInterfaceIdSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -22,7 +22,7 @@ var TypeDescribeNetworkInterfacesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "filterSet",
         type: "tns:FilterSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

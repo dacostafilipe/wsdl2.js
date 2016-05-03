@@ -30,7 +30,7 @@ var TypeVpnConnectionType = function(json, parentObj) {
       wsdlDefinition: {
         name: "customerGatewayConfiguration",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -40,7 +40,7 @@ var TypeVpnConnectionType = function(json, parentObj) {
       wsdlDefinition: {
         name: "type",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -68,7 +68,7 @@ var TypeVpnConnectionType = function(json, parentObj) {
       wsdlDefinition: {
         name: "tagSet",
         type: "tns:ResourceTagSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -78,7 +78,7 @@ var TypeVpnConnectionType = function(json, parentObj) {
       wsdlDefinition: {
         name: "vgwTelemetry",
         type: "tns:VgwTelemetryType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -88,7 +88,7 @@ var TypeVpnConnectionType = function(json, parentObj) {
       wsdlDefinition: {
         name: "options",
         type: "tns:VpnConnectionOptionsResponseType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -98,7 +98,7 @@ var TypeVpnConnectionType = function(json, parentObj) {
       wsdlDefinition: {
         name: "routes",
         type: "tns:VpnStaticRoutesSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

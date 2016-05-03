@@ -12,7 +12,7 @@ var TypeDescribeImagesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "executableBySet",
         type: "tns:DescribeImagesExecutableBySetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -31,7 +31,7 @@ var TypeDescribeImagesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "ownersSet",
         type: "tns:DescribeImagesOwnersType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -41,7 +41,7 @@ var TypeDescribeImagesType = function(json, parentObj) {
       wsdlDefinition: {
         name: "filterSet",
         type: "tns:FilterSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

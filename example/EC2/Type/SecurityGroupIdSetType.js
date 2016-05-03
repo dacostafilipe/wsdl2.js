@@ -12,7 +12,7 @@ var TypeSecurityGroupIdSetType = function(json, parentObj) {
       wsdlDefinition: {
         name: "item",
         type: "tns:SecurityGroupIdSetItemType",
-        minOccurs: 0,
+        minOccurs: "0",
         maxOccurs: "unbounded"
       },
       mask: Modeler.GET | Modeler.SET | Modeler.ARRAY,

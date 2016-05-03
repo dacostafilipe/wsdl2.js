@@ -12,7 +12,7 @@ var TypeDeleteTagsSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "key",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -22,7 +22,7 @@ var TypeDeleteTagsSetItemType = function(json, parentObj) {
       wsdlDefinition: {
         name: "value",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

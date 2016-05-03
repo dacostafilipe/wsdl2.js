@@ -21,7 +21,7 @@ var TypeLaunchSpecificationResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "keyName",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -40,7 +40,7 @@ var TypeLaunchSpecificationResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "addressingType",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -59,7 +59,7 @@ var TypeLaunchSpecificationResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "placement",
         type: "tns:SpotPlacementRequestType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -69,7 +69,7 @@ var TypeLaunchSpecificationResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "kernelId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -79,7 +79,7 @@ var TypeLaunchSpecificationResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "ramdiskId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -89,7 +89,7 @@ var TypeLaunchSpecificationResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "blockDeviceMapping",
         type: "tns:BlockDeviceMappingType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -99,7 +99,7 @@ var TypeLaunchSpecificationResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "monitoring",
         type: "tns:MonitoringInstanceType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -109,7 +109,7 @@ var TypeLaunchSpecificationResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "subnetId",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -119,7 +119,7 @@ var TypeLaunchSpecificationResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "networkInterfaceSet",
         type: "tns:InstanceNetworkInterfaceSetRequestType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -129,7 +129,7 @@ var TypeLaunchSpecificationResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "iamInstanceProfile",
         type: "tns:IamInstanceProfileRequestType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -139,7 +139,7 @@ var TypeLaunchSpecificationResponseType = function(json, parentObj) {
       wsdlDefinition: {
         name: "ebsOptimized",
         type: "xs:boolean",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

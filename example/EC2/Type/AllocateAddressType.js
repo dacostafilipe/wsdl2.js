@@ -12,7 +12,7 @@ var TypeAllocateAddressType = function(json, parentObj) {
       wsdlDefinition: {
         name: "domain",
         type: "xs:string",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

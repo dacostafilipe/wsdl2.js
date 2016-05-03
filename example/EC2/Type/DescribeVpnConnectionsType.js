@@ -12,7 +12,7 @@ var TypeDescribeVpnConnectionsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "vpnConnectionSet",
         type: "tns:VpnConnectionIdSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false
@@ -22,7 +22,7 @@ var TypeDescribeVpnConnectionsType = function(json, parentObj) {
       wsdlDefinition: {
         name: "filterSet",
         type: "tns:FilterSetType",
-        minOccurs: 0
+        minOccurs: "0"
       },
       mask: Modeler.GET | Modeler.SET,
       required: false

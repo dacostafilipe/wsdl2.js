@@ -5,7 +5,7 @@
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dacostafilipe/wsdl2.js.git"
+    "url": "https://github.com/dacostafilipe/wsdl2browser.git"
   },
   "scripts": {
     "test": "node tests/test && echo ✔"

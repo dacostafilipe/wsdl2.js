@@ -383,6 +383,12 @@ function propertyModelElement(json) {
     if (!(json instanceof Array)) json = [json];
     for (var i=0; i<json.length; i++) {
       var wsdlProperty = json[i];
+
+      // skip if it's an empty definition
+      if(!wsdlProperty){
+        continue;
+      }
+
       // Set default type?
       if (!wsdlProperty.hasOwnProperty("type")) wsdlProperty.type = ns['xsd']+"string";
       var newType = "";

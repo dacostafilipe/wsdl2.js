@@ -452,7 +452,8 @@ function createClass(className, type, propertyDefinition) {
     return m+":";
   });
 
-  newClass = newClass.replace(/###2###/g, txt);
+  newClass = newClass.replace(/###2###/g, txt!='{}'?txt:'');
+
   // Insert any functions into the template
   newClass = newClass.replace(/###3###/g, "");
   // Write the Class definition to file
